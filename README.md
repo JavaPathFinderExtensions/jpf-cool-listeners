@@ -5,9 +5,21 @@ This repo is a series of listener extensions for checking progress while jpf is 
 ### Install 
 
 - Clone this repo under jpf home.  The ideal structure is:
+
   - jpf-core
   - jpf-progress
   - ...
+
+- Add `jpf-progress` inside `.jpf/site.properties`, eg:
+
+  ```properties
+  ...
+  jpf-progress = ${jpf.home}/jpf-progress
+  extensions+=,${jpf-progress}
+  ```
+
+  
+
 - Inside `jpf-progress`, do `ant build`
 
 
