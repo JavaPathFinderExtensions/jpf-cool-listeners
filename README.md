@@ -10,7 +10,7 @@ This repo is a series of listener extensions for checking progress while jpf is 
   - jpf-progress
   - ...
 
-- Add `jpf-progress` inside `.jpf/site.properties`, eg:
+- Add `jpf-progress` inside `~/.jpf/site.properties`, eg:
 
   ```properties
   ...
