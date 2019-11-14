@@ -3,5 +3,5 @@ native_classpath = ${jpf-cool-listeners}/build/
 classpath = ${jpf-cool-listeners}/build/examples/path1/path2/path3
 target = Example
 #listener = .listener.PathCountEstimator
-listener = .listener.PrefixCallMonitor
+listener = .listener.PrefixMethodTracker
 jpf.prefix_call_monitor.prefix = "example.method2"

@@ -11,7 +11,7 @@ import gov.nasa.jpf.vm.*;
 
 import java.io.PrintWriter;
 
-public class PrefixCallMonitor extends ListenerAdapter {
+public class PrefixMethodTracker extends ListenerAdapter {
 
     private String prefix;
     static final String INDENT = "  ";
@@ -19,7 +19,7 @@ public class PrefixCallMonitor extends ListenerAdapter {
     MethodInfo lastMi;
     PrintWriter out;
 
-    public PrefixCallMonitor(Config conf, JPF jpf) {
+    public PrefixMethodTracker(Config conf, JPF jpf) {
         out = new PrintWriter(System.out, true);
         prefix = conf.getString("jpf.prefix_call_monitor.prefix", "");
     }
@@ -54,7 +54,11 @@ public class PrefixCallMonitor extends ListenerAdapter {
         if (ti.isFirstStepInsn()) {
             out.print("...");
         }
-
+        out.println();
+        out.println("Matched with monitored prefix: " + prefix);
+        out.println("Stack trace name: " + mi.getStackTraceName());
+        out.println("Argument numbers: " + mi.getArgumentsSize());
+        out.println("Signature: " + mi.getSignature());
         out.println();
     }
 
@@ -93,7 +97,7 @@ public class PrefixCallMonitor extends ListenerAdapter {
 
             if (callee != null) {
                 if (callee.isMJI()) {
-                    logMethodCall(ti, callee, ti.getStackDepth()+1);
+                   // logMethodCall(ti, callee, ti.getStackDepth()+1);
                 }
             } else {
                 out.println("ERROR: unknown callee of: " + insnToExecute);
