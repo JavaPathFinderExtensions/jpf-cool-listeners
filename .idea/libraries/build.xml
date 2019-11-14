@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="build">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../jpf-core/build" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../jpf-core/src/annotations" />
+      <root url="file://$PROJECT_DIR$/../jpf-core/src/classes" />
+      <root url="file://$PROJECT_DIR$/../jpf-core/src/examples" />
+      <root url="file://$PROJECT_DIR$/../jpf-core/src/main" />
+      <root url="file://$PROJECT_DIR$/../jpf-core/src/peers" />
+      <root url="file://$PROJECT_DIR$/../jpf-core/src/tests" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../jpf-core/build" recursive="false" />
+  </library>
+</component>

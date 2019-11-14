@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="annotations">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../jpf-core/src/annotations" />
+      <root url="file://$PROJECT_DIR$/../jpf-core/src/classes" />
+      <root url="file://$PROJECT_DIR$/../jpf-core/src/examples" />
+      <root url="file://$PROJECT_DIR$/../jpf-core/src/main" />
+      <root url="file://$PROJECT_DIR$/../jpf-core/src/peers" />
+      <root url="file://$PROJECT_DIR$/../jpf-core/src/tests" />
+    </SOURCES>
+  </library>
+</component>

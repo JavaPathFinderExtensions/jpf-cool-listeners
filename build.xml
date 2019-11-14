@@ -1,4 +1,4 @@
-<project name="jpf-progress" default="build" basedir=".">  
+<project name="jpf-cool-listeners" default="build" basedir=".">
   <property file="${user.home}/.jpf/site.properties"/>
   <property name="jpf-core" value = "../jpf-core"/>
   <property file="${jpf-core}/jpf.properties"/>
@@ -25,6 +25,8 @@
     <mkdir dir="build"/> 
     <mkdir dir="build/main"/>
     <javac srcdir="src/main" destdir="build/main" includeantruntime="false" classpathref="lib.path"/>
+    <mkdir dir="build/examples"/>
+    <javac srcdir="src/examples" destdir="build/examples" includeantruntime="false" classpathref="lib.path"/>
   </target>
 
 
