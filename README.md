@@ -1,26 +1,26 @@
-# jpf-progress
+# jpf-cool-listeners
 
-This repo is a series of listener extensions for checking progress while jpf is searching. Currently, there is only one listener that's implemented by the paper `JPFBAR`. More listeners are expected to be added. 
+This repo is a series of listener extensions for checking progress while jpf is searching.More listeners are expected to be added. 
 
 ### Install 
 
-- Clone this repo under jpf home.  The ideal structure is:
+- Clone this repo under jpf home.  The recommended structure is:
 
   - jpf-core
-  - jpf-progress
+  - jpf-cool-listeners
   - ...
 
 - Add `jpf-progress` inside `~/.jpf/site.properties`, eg:
 
   ```properties
   ...
-  jpf-progress = ${jpf.home}/jpf-progress
-  extensions+=,${jpf-progress}
+  jpf-cool-listeners = ${jpf.home}/jpf-cool-listeners
+  extensions+=,${jpf-cool-listeners}
   ```
 
   
 
-- Inside `jpf-progress`, do `ant build`
+- Inside `jpf-cool-listeners`, do `ant build`
 
 
 
@@ -29,8 +29,8 @@ This repo is a series of listener extensions for checking progress while jpf is 
 - Inside the `.jpf` file you are trying to run, add 
 
 ```properties
-@using = jpf-progress
-listener = gov.nasa.jpf.listener.PathCountEstimator
+@using = jpf-cool-listeners
+listener = ${listener-you-wanna-use}
 ...
 
 ```
